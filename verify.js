@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .then((response) => response.json().then((data) => ({ ok: response.ok, data })))
       .then(({ ok, data }) => {
         if (ok && data.ok) {
-          window.location.href = 'contact.html';
+          window.location.href = 'index.html';
           return;
         }
 

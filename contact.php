@@ -53,7 +53,7 @@ function renderPage(string $title, string $body, int $status = 200): void
         <p><?php echo htmlspecialchars($body, ENT_QUOTES, 'UTF-8'); ?></p>
       </header>
       <footer class="contact-footer">
-        <a href="contact.html">Back to contact form</a>
+        <a href="index.html">Back to contact form</a>
       </footer>
     </section>
   </main>
