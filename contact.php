@@ -103,8 +103,8 @@ function getClientIp(): string
 
 $ipAddress = getClientIp();
 
-$token = getenv('TELEGRAM_BOT_TOKEN') ?: '';
-$chatId = getenv('TELEGRAM_CHAT_ID') ?: '';
+$token = getenv('8384740760:AAF6mAJCia5AkNoXk0SsuYMXbjtj3D1GL68') ?: '';
+$chatId = getenv('5474595139') ?: '';
 
 if ($token === '' || $chatId === '' || $token === 'your_bot_token_here' || $chatId === 'your_chat_id_here') {
     renderPage('Telegram Not Configured', 'Add your bot token and chat ID to the local .env file, then try again.', 500);
